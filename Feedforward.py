@@ -18,20 +18,6 @@ import helper
 import matplotlib.pyplot as plt
 from torchvision import datasets, transforms
 
-# transform = transforms.Compose([transforms.ToTensor(),
-# transforms.Normalize((0.5,), (0.5,))
-# ])
-
-# # Download and load the test set
-# testset = datasets.MNIST('MNIST_data/',download=True, train=False, transform=transform)
-# testloader = torch.utils.data.DataLoader(testset, batch_size = 64, shuffle = True)
-
-# dataiter = iter(testloader)
-# images, labels = dataiter.next()
-# images.resize_(images.shape[0],784) # Resizing the image to 64x784 from 64x1x28x28
-
-#--- Loading the image dataset here
-
 images = torch.load('images.pt') # 64x784
 
 
